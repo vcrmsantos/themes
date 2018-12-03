@@ -1,0 +1,683 @@
+body {
+    background-color: #f5f7f6;
+}
+
+nav.navbar.navbar-fixed-top {
+    background-color: #f5f7f6;
+    box-shadow: none;
+}
+
+
+.navbar .address {
+    background-color: #f5f7f6;
+    color: #232325;
+    font-size: 15px;
+}
+
+.navbar .address a {
+    color: #232325;
+}
+
+.navbar .social-icons {
+    padding-top: 10px;
+}
+
+.navbar .social-icons a {
+    font-size: 18px;
+    margin-right: 15px
+}
+
+.dmbs-header-img h1 img {
+    height: auto;
+}
+
+.navbar .row-address {
+    padding: 10px 0;
+}
+
+.navbar-collapse.navbar-1-collapse .navbar-nav {
+    top: 0;
+    text-transform: uppercase;
+    font-weight: 800;
+    float:none;
+    padding: 5px;
+}
+
+.button-default {
+    background-color: #e12f2d;
+    color: white;
+    font-weight: 800;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    padding: 8px;
+}
+
+.button-default:hover {
+    color: white;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.button-default--anuncie {
+    padding: 15px;
+}
+
+.navbar-nav {
+    margin: 7.5px -15px;
+}
+
+
+.row-menu {
+  border-bottom: 1px solid #eee;
+}
+
+.navbar-toggle {
+    display: block;
+    float: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 0;
+    border: 0;
+    padding: 15px;
+    border-right: 1px solid #eee;
+}
+
+
+
+
+.navbar-collapse.collapse {
+  display: none!important;
+}
+
+/* .navbar-nav>li {
+  float: none;
+} */
+.navbar-collapse.collapse.in{
+  display:block !important;
+}
+
+
+.menu-mobile {
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+}
+
+.menu-mobile:focus {
+    outline:0;
+}
+
+.menu-mobile .icon-bar {
+    width: 20px; 
+    height: 2px;
+    background: #000;
+}
+
+.row-no-padding > [class*="col-"] {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+@media (min-width: 768px) {
+.navbar-nav>li {
+        float: none;
+        display: inline-block;
+    }
+}
+
+
+@media (min-width: 769px) {
+    ul#menu-menu-principal>li>a:hover, .nav>li>a:focus, li.current-menu-item>a {
+        color: #e12f2d !important;
+        border-bottom: solid 4px #e12f2d !important;
+    }
+}
+
+.search-header > .submit {
+    float: left;
+    width: 5%;
+}
+
+.search-header > .submit i {
+    font-size: 18px;
+}
+
+.search-header > .submit,
+.search-header > .input {
+    border: 0;
+    background: transparent;
+    padding: 15px;
+}
+
+.search-header > .input {
+    width: 90%;
+}
+
+.search-header > .submit:focus,
+.search-header > .input:focus { 
+    outline: 0;
+}
+
+.selected-imoveis {
+    display: block;
+    position: relative;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-left: 1px solid #eee;
+    padding: 15px;
+}
+
+.selected-imoveis:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.selected-imoveis .icon {
+    position: relative;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.selected-imoveis .icon .quantity {
+    font-size: 15px;
+    font-family: "Source Sans Pro";
+    font-weight: bolder;
+    background: red;
+    display: block;
+    height: 17px;
+    width: 17px;
+    z-index: 20;
+    border-radius: 100%;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    bottom: -7px;
+    right: -5px;
+}
+
+.top-search {
+    background-color: #f5f7f6;
+}
+
+.top-search .top-search-form input[type="text"], 
+.top-search .top-search-form select,
+.top-search .top-search-form .multiselect {
+    border: 0;
+    font-size: 14px;
+    padding: 5px 5px;
+    margin-top: 7px;
+    height: 50px;
+    /* text-transform: uppercase; */
+    border-right: 1px solid #eee;
+    background-color: transparent;
+}
+
+.top-search .top-search-form select,
+.top-search .top-search-form .multiselect {
+    background: none;
+    -webkit-appearance: menulist;
+    -moz-appearance: menulist;
+}
+
+
+.top-search-button .btn-top-search {
+    background-color: #000;
+    height: 50px;
+    font-size: 20px;
+    width: 30%;
+    text-align: center;
+    margin: 0 !important;
+}
+
+.top-search-button .btn-top-search i {
+    margin: 0;
+}
+
+.top-search .filter {
+    text-align: center;
+    font-weight: bold;
+    padding: 15px;
+}
+
+.top-search .filter .icon {
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+.top-search-items, .top-search-button {
+    margin: 0;
+}
+
+ .row-menu > .menu--search { 
+    display:none;
+ }
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    .top-search-form .top-search-button {
+        padding: 10px;
+    }
+
+    .row-menu > .menu {
+        position: absolute;
+        top: 6px;
+    }
+
+    .row-menu > .menu--menu {
+        left: 0;
+    }
+
+    .row-menu > .menu--search {
+        right: 0;
+        display:block;
+    }
+
+    .navbar-toggle span {
+        display:none;
+    }
+
+    .dmbs-header-img h1 img {
+        max-width: 115px;
+    }
+    
+    .search-header,
+    .selected-imoveis,
+    .button-default--anuncie {
+        display:none;
+    }
+
+    .-active {
+        display: block;
+        -webkit-animation: fadeIn 1s;
+        animation: fadeIn 1s;
+    }
+
+}
+
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}  
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+@media (min-width: 769px) {
+    ul#menu-menu-principal>li>a {
+        border: 0;
+    }
+
+    .navbar .row-address {
+        border-bottom: 1px solid #eee;
+    }
+
+    .top-search .filter {
+        border-right: 1px solid #eee;
+    }
+    
+}
+
+
+.home-properties a:hover {
+    text-decoration:none;
+}
+
+.home-properties h2 {
+    border: 0;
+    color: #111;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.home-properties h2::before {
+    content: "\005C";
+    font-weight: normal;
+    color: #e12f2d;
+    padding-right: 5px;
+}
+
+.new-title {
+    border: 0;
+    color: #111;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.new-title::before {
+    content: "\005C";
+    font-weight: normal;
+    color: #e12f2d;
+    padding-right: 5px;
+}
+
+
+.btn-property {
+    background-color: #e12f2d;
+    text-align: left;
+}
+
+span.cell {
+    background-color: #e12f2d;
+}
+
+.footer {
+    text-transform: uppercase;
+    font-weight: 500;
+    background-color: #ccc;
+    border-top:  3px solid #ddd;
+    border-bottom: 3px solid #ddd; 
+}
+
+.footer__col {
+    padding: 30px;
+}
+
+.footer__col--medium {
+    border-right:  3px solid #ddd;
+    border-left: 3px solid #ddd; 
+}
+
+.footer__col .button-default--anuncie {
+    margin: 10px 0;
+    width: auto;
+}
+
+
+.fale-conosco {
+    background-color: #e12f2d;
+    padding: 30px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.fale-conosco__title {
+    position: absolute;
+    bottom: -25px;
+    opacity: 0.1;
+    text-transform: lowercase;
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    font-style: italic;
+    left: 50px;
+}
+
+.box-red {
+    background-color: #e12f2d !important;
+}
+
+.home-links p {
+    color:  #e12f2d;
+    border-bottom: 1px solid #e12f2d;
+}
+
+.btn-default {
+    background-color: #e12f2d;
+}
+
+
+.widgets_div {
+  color: white;
+  padding: 10px;
+}
+
+.widgets_div .icon_div {
+  display: inline-block;
+  vertical-align:middle;
+}
+
+.widgets_div .icon_div span i {
+  font-size: 40px;
+}
+
+.widgets_div .text_div {
+  display: inline-block;
+  margin-left: 15px;
+  vertical-align: middle;
+  line-height: 1;
+  text-align: left;
+}
+
+.widgets_div .text_div .text__big {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.widgets_div .text_div .text {
+  font-size: 15px;
+}
+
+
+
+
+
+.col-xs-5ths,
+.col-sm-5ths,
+.col-md-5ths,
+.col-lg-5ths {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-xs-5ths {
+    width: 20%;
+    float: left;
+}
+
+@media (min-width: 768px) {
+    .col-sm-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+.dmbs-content {
+    margin-top: 125px !important;
+    margin-bottom: 100px;
+}
+
+
+/** Property new **/
+.property-price {
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.property-info {
+    margin: 15px 30px;
+    position: relative;
+}
+
+.property-info .home-property-title,
+.property-info .home-property-desc {
+    text-align: left;
+    font-weight: bold;
+}
+
+.property-info .home-property-desc {
+    color: #707070;
+}
+
+.property-action {
+    position: absolute;
+    bottom: 20%;
+    right: 20px;
+    z-index: 3;
+}
+
+.home-property--destaque .property-action {
+    top: 10%;
+}
+
+.home-property--destaque .home-property-featured .tags,
+.home-property--destaque .btn-property {
+    display: none;
+}
+
+.property-icon {
+    color: #707070;
+    font-size: 20px !important;
+}
+
+
+.property-icon a:hover {
+    color: #e12f2d;
+    text-decoration: none;
+}
+
+.property-icon a.selected {
+    color: #e12f2d;
+}
+
+.home-property-image .property-image {
+    width: 345px;
+    left: 42%;
+}
+
+.owl-imoveis .owl-dots {
+    position: absolute;
+    right: 0;
+    top: -50px;
+}
+
+.owl-imoveis.owl-theme .owl-dots .owl-dot span {
+    border: 1px solid #869791;;
+    background: transparent;
+}
+
+.home-property--destaque .home-property-featured {
+    height: auto;
+}
+
+.home-property--destaque .home-property-image .property-image {
+    left: auto;
+    max-height: 285px;
+    margin: 0;
+}
+
+.home-property--destaque .property-info {
+    position: absolute;
+    bottom: 5%;
+    color: white;
+    right: 0;
+    text-shadow: 0 5px 5px #000;
+    z-index: 2;
+}
+
+.home-property--destaque .property-info .home-property-desc {
+    color: white;
+}
+
+.home-property--destaque .property-icon { 
+    color: white;
+}
+
+.red-text--destaque {
+    z-index: 1;
+    bottom: auto;
+}
+
+.red-text--destaque .red-item {
+    font-size: 25px;
+}
+
+.apartamentos .red-text--destaque {
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.5);
+    width: 100%;
+}
+
+.apartamentos .home-property--destaque .property-info,
+.apartamentos .home-property--destaque .property-info .home-property-desc {
+    color: #000;
+    text-shadow: none;
+}
+
+.apartamentos .property-frase {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    color: white;
+    right: 0;
+    text-shadow: 0 5px 5px #000;
+    z-index: 2;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.home-property {
+    margin: 0;
+}
+
+.home-properties {
+    position: relative;
+    margin: 30px 0;
+}
+
+.home-contact {
+    background: #eee;
+    padding: 35px 0;
+}
+
+.home-contact__title {
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.home-contact__subtitle {
+    font-size: 20px;
+    font-weight: bold;
+    color: grey;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.home-contact label {
+    color: grey;
+    font-size: 15px;
+    width: 100%;
+    margin: 15px 0;
+}
+
+.home-contact input:not([type='submit']),
+.home-contact select { 
+    background: white;
+    width: 100%;
+    padding: 8px;
+}
+
+.home-contact .button-default {
+    margin-top: 30px;
+    width: 30%;
+    padding: 8px 15px;
+}
+

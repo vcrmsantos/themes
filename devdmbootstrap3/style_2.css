@@ -1,0 +1,11 @@
+#top-search { padding-bottom:15px; }
+.btn-top-search { width:90%; }
+.top-search-items .btn-link { position:absolute; width:90%; padding: 5px 5px; text-align:right; right:10%; bottom:-25px; color:#fff; font-size:10px; }
+.new-value, .old-value { display:block; text-align:left; padding-left:10px; }
+.old-value { font-size:14px; }
+
+@media (max-width: 767px) {
+	div#top-search .btn-top-search { margin-top: 20px; width: 100%; }
+	.top-search-items .btn-link { padding: 10px;  bottom: -40px; font-size: 18px; width: 100%; right: 0; }
+	
+}
