@@ -15,7 +15,7 @@ $propUrl = getPropertyUrl($prop); $sql = 'SELECT arquivo, descricao FROM em_phot
  			<?php echo $prop['preco_venda'] != '0,00' ? '<span class="cell">Venda</span>' : ''; echo $prop['preco_locacao'] != '0,00' ? '<span class="rent">Locação</span>' : ''; ?>
 		 </div>
 		 	
- 		<img class="owl-lazy property-image" data-src="<?php echo  $photos[0]['arquivo']; ?>" alt="<?php echo  $photos[0]['descricao']; ?>"/>
+ 		<img class="property-image" src="<?php echo  $photos[0]['arquivo']; ?>" alt="<?php echo  $photos[0]['descricao']; ?>"/>
 
 		<?php if (strcasecmp($exclusividade, "true") == 0) { ?>
 			<img class="selo-exclusividade" src="<?php echo $selo_image_url; ?>" alt="Selo de Exclusividade">
@@ -30,8 +30,7 @@ $propUrl = getPropertyUrl($prop); $sql = 'SELECT arquivo, descricao FROM em_phot
 			<?php echo  (int)$prop['dormitorios']; ?> dorms | <?php echo  (int)$prop['suites']; ?> sts 
 			| <?php echo  (int)$prop['vagas']; ?> vgs | <?php echo  number_format((float)str_replace(',', '.', $prop['area_util']), 0, ',', '.'); ?>m²
 		</p>
-	 </div>
-	 <div class="property-action">
+		<div class="property-action">
 		<?php if (isset($selected_property)) : ?>
 			<div id="top-search">
 				<div class="container">
@@ -59,6 +58,7 @@ $propUrl = getPropertyUrl($prop); $sql = 'SELECT arquivo, descricao FROM em_phot
 				<a target="_share" href="<?php echo get_permalink(62) . '?id=' . $prop['referencia'] ?>" data-property-id="<?php echo  $prop['referencia'] ?>" title="Clique aqui para compartilhar este imóvel" class="property-icon property-icon--share fa fa-share-alt"></a>
 			</div>
 		</div>
+	 </div>
  	<a href="<?php echo  $propUrl ?>" title="Clique e veja mais detalhes" class="btn-default btn-property<?php echo ( (isset($_GET['buy']) && $_GET['buy'] == 'locacao') || $prop['preco_venda'] == '0,00') ? ' btn-rent' : '' ?>">
 		 <span class="property-price">
 		 <?php $price = ($locacao || $prop['preco_venda'] == '0,00') ? moneyFormat($prop['preco_locacao']) : moneyFormat( $prop['preco_venda']);

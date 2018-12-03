@@ -12,6 +12,9 @@ nav.navbar.navbar-fixed-top {
     background-color: #f5f7f6;
     color: #232325;
     font-size: 15px;
+    padding:0;
+    margin:0;
+    line-height: 44.5px; /* metade da altura da maior coluna da row */
 }
 
 .navbar .address a {
@@ -19,7 +22,7 @@ nav.navbar.navbar-fixed-top {
 }
 
 .navbar .social-icons {
-    padding-top: 10px;
+    line-height: 44.5px; /* metade da altura da maior coluna da row */
 }
 
 .navbar .social-icons a {
@@ -509,7 +512,7 @@ span.cell {
 }
 
 .property-info {
-    margin: 15px 30px;
+    padding: 10px;
     position: relative;
 }
 
@@ -525,8 +528,8 @@ span.cell {
 
 .property-action {
     position: absolute;
-    bottom: 20%;
-    right: 20px;
+    bottom: 0;
+    right: 30px;
     z-index: 3;
 }
 
@@ -555,7 +558,7 @@ span.cell {
 }
 
 .home-property-image .property-image {
-    width: 345px;
+    width: 100%;
     left: 42%;
 }
 
@@ -681,3 +684,21 @@ span.cell {
     padding: 8px 15px;
 }
 
+.breadcrumbs {
+	background: linear-gradient(90deg, #30353b 95%, #e12f2d 5%);
+	color: #a4a9ad;
+	padding: 30px;
+	text-transform: capitalize;
+	margin: 0;
+	border: 0;
+}
+
+.breadcrumbs span,
+.breadcrumbs a {
+	color: #a4a9ad;
+	margin: 0px 2px;
+}
+
+.breadcrumbs span:last-child span {
+    color: #fff;
+}

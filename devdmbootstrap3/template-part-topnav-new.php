@@ -1,9 +1,4 @@
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/new-style.css">
-<style>
-    .navbar-fixed-top {
-    top: auto;
-}
-</style>
 <?php if ( has_nav_menu( 'main_menu' ) ) : ?>
 <div class="dmbs-top-menu <?= isset($currentpage) ? $currentpage : '' ?>">
     <nav class="navbar navbar-fixed-top" role="navigation">
@@ -75,9 +70,9 @@
                     </div>
                 </div>
                 <div class="col-md-5">
-                    <form class="search-header">
+                    <form class="search-header" action="busca-completa">
                         <button class="submit" type="submit"><i class="fa fa-search"></i></button>
-                        <input class="input" type="text" placeholder="Busque por bairro ou cidade..." name="search">
+                        <input class="input" type="text" name="search-all" placeholder="Busque por bairro ou cidade..." name="search">
                     </form>
                 </div>
                 <div class="col-md-3">
