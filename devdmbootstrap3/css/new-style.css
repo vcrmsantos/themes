@@ -20,6 +20,12 @@ nav.navbar.navbar-fixed-top {
     margin-bottom: 0;
 }
 
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .dmbs-content {
+        margin-top: 32px !important;
+    }
+}
 
 .navbar .address {
     background-color: #f5f7f6;
@@ -245,7 +251,6 @@ nav.navbar.navbar-fixed-top {
     text-align: center;
     margin: 0;
     margin-top: 0px !important;
-    margin-left: -3px;
 }
 
 .top-search-button .btn-top-search i {
@@ -596,19 +601,11 @@ span.cell {
 
 .property-action {
     position: absolute;
-    bottom: 5px;
+    bottom: 50px;
     right: 30px;
     z-index: 3;
 }
 
-.home-property--destaque .property-action {
-        bottom: 260%;
-}
-
-.home-property--destaque .home-property-featured .tags,
-.home-property--destaque .btn-property {
-    display: none;
-}
 
 .property-icon {
     color: #707070;
@@ -625,69 +622,17 @@ span.cell {
     color: #e12f2d;
 }
 
-.home-property-image .property-image {
-    width: 100%;
-    left: 40%;
-}
-
-.owl-imoveis .owl-dots {
-    position: absolute;
-    right: 0;
-    top: -50px;
-}
 
 .owl-imoveis.owl-theme .owl-dots .owl-dot span {
     border: 1px solid #869791;;
     background: transparent;
 }
 
-.home-property--destaque .home-property-featured {
-    height: auto;
-}
-
-.home-property--destaque .home-property-image .property-image {
-    left: auto;
-    max-height: 285px;
-    margin: 0;
-}
-
-.home-property--destaque .property-info {
-    position: absolute;
-    bottom: 5%;
-    color: white;
-    right: 0;
-    text-shadow: 0 5px 5px #000;
-    z-index: 2;
-}
-
-.home-property--destaque .property-info .home-property-desc {
-    color: white;
-}
-
-.home-property--destaque .property-icon { 
-    color: white;
-}
-
 .red-text--destaque {
-    z-index: 1;
-    bottom: auto;
+    display: none;
 }
 
-.red-text--destaque .red-item {
-    font-size: 25px;
-}
 
-.apartamentos .red-text--destaque {
-    bottom: 0;
-    background: rgba(255, 255, 255, 0.5);
-    width: 100%;
-}
-
-.apartamentos .home-property--destaque .property-info,
-.apartamentos .home-property--destaque .property-info .home-property-desc {
-    color: #000;
-    text-shadow: none;
-}
 
 .apartamentos .property-frase {
     position: absolute;
@@ -946,4 +891,89 @@ span.cell {
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+
+@media only screen and (min-width: 992px) {
+    .home-property-image .property-image {
+        width: 100%;
+        left: 40%;
+    }
+
+    .home-properties .owl-imoveis .home-property {
+        width: 375px;
+    }
+
+    .home-properties .owl-imoveis .home-property--destaque {
+        width: 726.666px;
+    }
+
+    .home-property--destaque .property-action {
+            bottom: 260%;
+    }
+
+    .home-property--destaque .home-property-featured .tags,
+    .home-property--destaque .btn-property {
+        display: none;
+    }
+
+    .home-property--destaque .home-property-featured {
+        height: auto;
+    }
+    
+    .home-property--destaque .home-property-image .property-image {
+        left: auto;
+        max-height: 285px;
+        margin: 0;
+    }
+    
+    .home-property--destaque .property-info {
+        position: absolute;
+        bottom: 5%;
+        color: white;
+        right: 0;
+        text-shadow: 0 5px 5px #000;
+        z-index: 2;
+    }
+    
+    .home-property--destaque .property-info .home-property-desc {
+        color: white;
+    }
+    
+    .home-property--destaque .property-icon { 
+        color: white;
+    }
+
+    .apartamentos .home-property--destaque .property-info,
+    .apartamentos .home-property--destaque .property-info .home-property-desc {
+        color: #000;
+        text-shadow: none;
+    }
+
+    
+    .red-text--destaque {
+        z-index: 1;
+        bottom: auto;
+        display: block;
+    }
+
+    .red-text--destaque .red-item {
+        font-size: 25px;
+    }
+
+    .apartamentos .red-text--destaque {
+        bottom: 0;
+        background: rgba(255, 255, 255, 0.5);
+        width: 100%;
+    }
+
+    .property-action {
+        bottom: 5px;
+    }
+
+    .owl-imoveis .owl-dots {
+        position: absolute;
+        right: 0;
+        top: -50px;
+    }
+
 }

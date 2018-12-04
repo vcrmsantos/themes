@@ -71,6 +71,12 @@ function closeNav() {
     content.classList.add("dmbs-content");
 }
 
+jQuery(".menu--search").click(function(){
+    jQuery(".selected-imoveis").toggleClass('-active');
+    jQuery(".button-default--anuncie").toggleClass('-active');
+    jQuery(".search-header").toggleClass('-active');
+});
+
 </script>
 
 </body>

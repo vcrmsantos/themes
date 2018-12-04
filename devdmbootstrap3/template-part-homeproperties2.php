@@ -75,19 +75,11 @@ $bairros_home = array(
 		<div class="owl-imoveis owl-carousel owl-theme">
 		<?php 		
 		foreach ($result as $prop) :
-			if ( strtolower($label) != 'comerciais' ) {
-				if ( $x == 0 ) {
-					$w = 'width:726.666px;';
-				} else {
-					$w = 'width:375px;';
-				}
-			}
-
 			$string_destaque = strtolower($label) == 'apartamentos' ? 'Destaque da Semana' : 'Impossível não se apaixonar';
 			$string_destaque = explode( ' ', $string_destaque );
 
 		?>
-				<div class="home-property home-property--home <?php echo strtolower($label) != 'comerciais' && $x == 0 ? 'home-property--destaque' : ''; ?>" style="<?php echo $w; ?>">
+				<div class="home-property home-property--home <?php echo strtolower($label) != 'comerciais' && $x == 0 ? 'home-property--destaque' : ''; ?>">
 					<?php if ( strtolower($label) != 'comerciais' && $x == 0 ) : ?>
 						<?php echo strtolower($label) == 'apartamentos' ? '<div class="property-frase">Sonho de morar <br> na cobertura</div>' : ''; ?>
 							<div class="red-text red-text--destaque">

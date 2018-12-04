@@ -23,7 +23,7 @@
     }
 
     .sobre-a-erwin__item {
-      padding: 10px;
+      padding: 20px;
     }
 
     .sobre-a-erwin__address {
