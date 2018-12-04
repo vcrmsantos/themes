@@ -1,4 +1,8 @@
-
+<?php
+/*
+Template Name: Teste Single Property
+*/
+?>
 <?php ob_start();
  define('WP_USE_THEMES', true);
  require ('wp-load.php');
@@ -46,7 +50,7 @@ exit ;
 <!-- start content container -->
 <div class="dmbs-content content">
 <?php include(locate_template('template-part-topsearch-new.php')); ?>
-		<div class="breadcrumbs" typeof="BreadcrumbList" vocab="http://schema.org/">
+		<div class="breadcrumbs breadcrumb--property" typeof="BreadcrumbList" vocab="http://schema.org/">
 			<div class="container">
 				<div class="row">
 					<?php 
@@ -66,9 +70,11 @@ exit ;
 		</div>
 		<div class="single-property">
 				<?php include (locate_template('template-part-property-new.php')); ?>
-				<div class="container">
-					<div class="row">
-						<?php include (locate_template('template-part-featureproperties-new.php')); ?>
+				<div class="feature-properties">
+					<div class="container">
+						<div class="row">
+							<?php include (locate_template('template-part-featureproperties-new.php')); ?>
+						</div>
 					</div>
 				</div>
 		</div>
@@ -76,6 +82,6 @@ exit ;
 </div>
 <!-- end content container -->
 
-<?php get_footer(); ?>
+<?php get_footer('new'); ?>
 
 

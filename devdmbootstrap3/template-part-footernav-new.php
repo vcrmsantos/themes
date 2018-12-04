@@ -32,9 +32,6 @@
 <?php endif; ?>
 
 
-<?php include(locate_template('template-part-home-blog.php')); ?>
-<?php get_template_part( 'template-sobre-a', 'erwin' ); ?>
-
 <section class="home-contact">
     <div class="container">
         <div class="home-contact__title">Ainda não encontrou o que está procurando? </div>

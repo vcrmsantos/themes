@@ -11,9 +11,9 @@ $propUrl = getPropertyUrl($prop); $sql = 'SELECT arquivo, descricao FROM em_phot
 	 
 
 	
-	 	<div class="tags text-right">
- 			<?php echo $prop['preco_venda'] != '0,00' ? '<span class="cell">Venda</span>' : ''; echo $prop['preco_locacao'] != '0,00' ? '<span class="rent">Locação</span>' : ''; ?>
-		 </div>
+	 	<!-- <div class="tags text-right">
+ 			<?php //echo $prop['preco_venda'] != '0,00' ? '<span class="cell">Venda</span>' : ''; echo $prop['preco_locacao'] != '0,00' ? '<span class="rent">Locação</span>' : ''; ?>
+		 </div> -->
 		 	
  		<img class="property-image" src="<?php echo  $photos[0]['arquivo']; ?>" alt="<?php echo  $photos[0]['descricao']; ?>"/>
 

@@ -44,7 +44,8 @@ Template Name: Página Inicial
    </div>
 </div> <!-- end content container -->
 
-    
+<?php include(locate_template('template-part-home-blog.php')); ?>
+<?php get_template_part( 'template-sobre-a', 'erwin' ); ?>
 
 <?php include(locate_template('footer-new.php')); // desse modo é possível passar variáveis ?>
 
@@ -77,3 +78,4 @@ Template Name: Página Inicial
     }
 });
 </script>
+

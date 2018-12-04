@@ -38,8 +38,9 @@
             </a>
             <div class="home-blog__content">
                 <div class="home-blog__title"><?php the_title(); ?></div>
-                <div class="home-blog__desc"><?php echo $content . '...'; ?>
-                <a href="<?php the_permalink(); ?>" class="home-blog__read-more">Ler Matéria</a></div>
+                <div class="home-blog__desc"><?php echo $i == 0 ? $content . '...' : ''; ?>
+                <a href="<?php the_permalink(); ?>" class="home-blog__read-more">Ler Matéria</a>
+                </div>
             </div>
             </div>
         <?php 

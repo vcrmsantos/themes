@@ -79,7 +79,7 @@ $bairros_home = array(
 				if ( $x == 0 ) {
 					$w = 'width:726.666px;';
 				} else {
-					$w = 'width:364px;';
+					$w = 'width:375px;';
 				}
 			}
 
@@ -87,7 +87,7 @@ $bairros_home = array(
 			$string_destaque = explode( ' ', $string_destaque );
 
 		?>
-				<div class="home-property <?php echo strtolower($label) != 'comerciais' && $x == 0 ? 'home-property--destaque' : ''; ?>" style="<?php echo $w; ?>">
+				<div class="home-property home-property--home <?php echo strtolower($label) != 'comerciais' && $x == 0 ? 'home-property--destaque' : ''; ?>" style="<?php echo $w; ?>">
 					<?php if ( strtolower($label) != 'comerciais' && $x == 0 ) : ?>
 						<?php echo strtolower($label) == 'apartamentos' ? '<div class="property-frase">Sonho de morar <br> na cobertura</div>' : ''; ?>
 							<div class="red-text red-text--destaque">

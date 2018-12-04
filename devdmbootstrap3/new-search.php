@@ -35,33 +35,25 @@ $result = $sth->fetchAll();
 <!-- start content container -->
 <div class="content dmbs-content">	
      <?php include(locate_template('template-part-topsearch2.php')); ?>
-    <div class="container">
-	<div class="breadcrumbs" typeof="BreadcrumbList" vocab="http://schema.org/">
-	    <?php if(function_exists('bcn_display')) { bcn_display(); } ?>
-	</div>
-		
-    <div class="col-md-12 dmbs-main search-properties">	
-	        <?php // theloop
-	        if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-	            <h2 class="page-header"><?php the_title() ;?></h2>
-	            
-	            <?php echo the_post_thumbnail('full', array( 'class' => 'img-responsive' ) ); ?>
-	            <?php the_content(); ?>
-	            <?php wp_link_pages(); ?>
-	            <?php comments_template(); ?>
-	
-	        <?php endwhile; ?>
-	        <?php else: ?>
-	
-	            <?php get_404_template(); ?>
-	
-	        <?php endif; ?>		
-		<?php include(locate_template('template-part-search.php')); ?> 
-   </div>
-   <?php include(locate_template('template-part-pagination.php')); ?>
-   </div>
 
+	<div class="breadcrumbs" typeof="BreadcrumbList" vocab="http://schema.org/">
+		<div class="container">
+			<div class="row">
+				<?php if(function_exists('bcn_display')) { bcn_display(); } ?>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container">
+		<div class="row">
+			<h2 class="new-title"><?php the_title() ;?></h2>
+			<?php include(locate_template('template-part-search-new.php')); ?> 
+		</div>
+		<div class="row">
+			<?php include(locate_template('template-part-pagination.php')); ?>
+		</div>
+	</div>
 </div>
 <!-- end content container -->
 
-<?php get_footer(); ?>
+<?php get_footer('new'); ?>

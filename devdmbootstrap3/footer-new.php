@@ -1,6 +1,6 @@
-<div class="dmbs-footer">        
-    <?php get_template_part('template-part', 'footernav-new'); ?>
-</div>
+ 
+<?php get_template_part('template-part', 'footernav-new'); ?>
+
 
 </div>
 <!-- end main container -->
@@ -50,6 +50,27 @@
 })(jQuery);
 
 document.addEventListener('contextmenu', event => event.preventDefault());
+
+
+var body = document.querySelector("body");
+var nav = document.querySelector("nav.navbar");
+var content = document.querySelector(".content");
+
+document.getElementById("open-sidenav").onclick = function() {openNav()};
+document.getElementById("close-sidenav").onclick = function() {closeNav()};
+
+function openNav() {
+    body.classList.add("sidenav--active");
+    nav.classList.remove("navbar-fixed-top");
+    content.classList.remove("dmbs-content");
+}
+
+function closeNav() {
+    body.classList.remove("sidenav--active");
+    nav.classList.add("navbar-fixed-top");
+    content.classList.add("dmbs-content");
+}
+
 </script>
 
 </body>

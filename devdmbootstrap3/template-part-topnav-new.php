@@ -72,7 +72,7 @@
                 <div class="col-md-5">
                     <form class="search-header" action="busca-completa">
                         <button class="submit" type="submit"><i class="fa fa-search"></i></button>
-                        <input class="input" type="text" name="search-all" placeholder="Busque por bairro ou cidade..." name="search">
+                        <input class="input" type="text" name="search-all" placeholder="Busque por referência, cidade, localidade ou logradouro..." name="search">
                     </form>
                 </div>
                 <div class="col-md-3">
@@ -96,3 +96,43 @@
 </div>
 
 <?php endif; ?>
+
+<nav id="sidenav-vanilla" class="sidenav">
+  <span href="javascript:void(0)" id="close-sidenav" class="closebtn">&times;</span>
+  <div class="brand">
+    <img class="brand__logo" src="<?php echo get_template_directory_uri(); ?>/images/logo-erwin-light.png" alt="Erwin Maack">
+  </div>
+  <ul class="sidenav__list">
+  <?php
+    $menu_name = 'main_menu';
+    $locations = get_nav_menu_locations();
+    $menu = wp_get_nav_menu_object( $locations[ $menu_name ] );
+    $menuitems = wp_get_nav_menu_items( $menu->term_id, array( 'order' => 'DESC' ) );
+
+    foreach( $menuitems as $item ) {
+      // set up title and url
+      $title = $item->title;
+      $link = $item->url;
+      echo '<li class="sidenav__item">';
+        echo '<a class="sidenav__link" href="' .$link. '" title="' .$title. '">' .$title. '</a>';
+      echo '</li>';
+    }
+?>
+</ul>
+  <div class="social-icons">
+    <a href="http://www.facebook.com/lopeserwinmaack" title="Conheça o nosso facebook!" target="_facebook">
+      <i class="fa fa-facebook fa-icon-special" aria-hidden="true">&nbsp;</i>
+    </a>
+    <a href="https://plus.google.com/108439445162457545114" title="Conheça o nosso Google Plus!" target="_gplus">
+      <i class="fa fa-google-plus fa-icon-special" aria-hidden="true">&nbsp;</i>
+    </a>
+    <a href="https://twitter.com/lopeserwinmaack" title="Conheça o nosso twitter!" target="_twitter">
+      <i class="fa fa-twitter fa-icon-special" aria-hidden="true">&nbsp;</i>
+    </a>
+    <a href="https://www.instagram.com/lopeserwinmaack" title="Conheça o nosso instagram!" target="_instagram">
+      <i class="fa fa-instagram fa-icon-special" aria-hidden="true">&nbsp;</i>
+    </a>
+  </div>
+
+</nav>
+
