@@ -125,12 +125,13 @@ function arboReal_scripts() {
     wp_enqueue_style('owl-theme-default', get_stylesheet_directory_uri() . '/assets/css/owl.theme.default.min.css');
     
     //Fonts 
-    wp_enqueue_style('Gotham', get_stylesheet_directory_uri() . '/assets/fonts/Gotham.css');
+    /* wp_enqueue_style('Gotham', get_stylesheet_directory_uri() . '/assets/fonts/Gotham.css');
     wp_enqueue_style('Gotham Medium', get_stylesheet_directory_uri() . '/assets/fonts/Gotham Medium.css');
     wp_enqueue_style('Gotham Light', get_stylesheet_directory_uri() . '/assets/fonts/Gotham Light.css');
     wp_enqueue_style('Gotham Book', get_stylesheet_directory_uri() . '/assets/fonts/Gotham Book.css');
     wp_enqueue_style('Gotham Bold', get_stylesheet_directory_uri() . '/assets/fonts/Gotham Bold.css');
-    wp_enqueue_style('Gotham Black', get_stylesheet_directory_uri() . '/assets/fonts/Gotham Black.css');
+    wp_enqueue_style('Gotham Black', get_stylesheet_directory_uri() . '/assets/fonts/Gotham Black.css'); */
+    wp_enqueue_style('Gotham Black', get_stylesheet_directory_uri() . '/assets/fonts/Karu/karu.css');
     wp_enqueue_style('Rotis SemiSerif Std', get_stylesheet_directory_uri() . '/assets/fonts/Rotis SemiSerif Std.css');
    
     /*

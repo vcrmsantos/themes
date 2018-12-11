@@ -1,0 +1,168 @@
+@font-face {
+    font-family: 'Karu';
+    src: url('Karu-Medium.eot');
+    src: url('Karu-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Karu-Medium.woff2') format('woff2'),
+        url('Karu-Medium.woff') format('woff'),
+        url('Karu-Medium.ttf') format('truetype'),
+        url('Karu-Medium.svg#Karu-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Karu';
+    src: url('Karu-LightItalic.eot');
+    src: url('Karu-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('Karu-LightItalic.woff2') format('woff2'),
+        url('Karu-LightItalic.woff') format('woff'),
+        url('Karu-LightItalic.ttf') format('truetype'),
+        url('Karu-LightItalic.svg#Karu-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Karu';
+    src: url('Karu-BoldItalic.eot');
+    src: url('Karu-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Karu-BoldItalic.woff2') format('woff2'),
+        url('Karu-BoldItalic.woff') format('woff'),
+        url('Karu-BoldItalic.ttf') format('truetype'),
+        url('Karu-BoldItalic.svg#Karu-BoldItalic') format('svg');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Karu';
+    src: url('Karu-Italic.eot');
+    src: url('Karu-Italic.eot?#iefix') format('embedded-opentype'),
+        url('Karu-Italic.woff2') format('woff2'),
+        url('Karu-Italic.woff') format('woff'),
+        url('Karu-Italic.ttf') format('truetype'),
+        url('Karu-Italic.svg#Karu-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Karu';
+    src: url('Karu-Bold.eot');
+    src: url('Karu-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Karu-Bold.woff2') format('woff2'),
+        url('Karu-Bold.woff') format('woff'),
+        url('Karu-Bold.ttf') format('truetype'),
+        url('Karu-Bold.svg#Karu-Bold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Karu';
+    src: url('Karu-ExtraLightItalic.eot');
+    src: url('Karu-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('Karu-ExtraLightItalic.woff2') format('woff2'),
+        url('Karu-ExtraLightItalic.woff') format('woff'),
+        url('Karu-ExtraLightItalic.ttf') format('truetype'),
+        url('Karu-ExtraLightItalic.svg#Karu-ExtraLightItalic') format('svg');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Karu';
+    src: url('Karu-Light.eot');
+    src: url('Karu-Light.eot?#iefix') format('embedded-opentype'),
+        url('Karu-Light.woff2') format('woff2'),
+        url('Karu-Light.woff') format('woff'),
+        url('Karu-Light.ttf') format('truetype'),
+        url('Karu-Light.svg#Karu-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Karu';
+    src: url('Karu-ExtraBold.eot');
+    src: url('Karu-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('Karu-ExtraBold.woff2') format('woff2'),
+        url('Karu-ExtraBold.woff') format('woff'),
+        url('Karu-ExtraBold.ttf') format('truetype'),
+        url('Karu-ExtraBold.svg#Karu-ExtraBold') format('svg');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Karu';
+    src: url('Karu-Black.eot');
+    src: url('Karu-Black.eot?#iefix') format('embedded-opentype'),
+        url('Karu-Black.woff2') format('woff2'),
+        url('Karu-Black.woff') format('woff'),
+        url('Karu-Black.ttf') format('truetype'),
+        url('Karu-Black.svg#Karu-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Karu';
+    src: url('Karu-MediumItalic.eot');
+    src: url('Karu-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('Karu-MediumItalic.woff2') format('woff2'),
+        url('Karu-MediumItalic.woff') format('woff'),
+        url('Karu-MediumItalic.ttf') format('truetype'),
+        url('Karu-MediumItalic.svg#Karu-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Karu';
+    src: url('Karu-ExtraBoldItalic.eot');
+    src: url('Karu-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Karu-ExtraBoldItalic.woff2') format('woff2'),
+        url('Karu-ExtraBoldItalic.woff') format('woff'),
+        url('Karu-ExtraBoldItalic.ttf') format('truetype'),
+        url('Karu-ExtraBoldItalic.svg#Karu-ExtraBoldItalic') format('svg');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Karu';
+    src: url('Karu-BlackItalic.eot');
+    src: url('Karu-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('Karu-BlackItalic.woff2') format('woff2'),
+        url('Karu-BlackItalic.woff') format('woff'),
+        url('Karu-BlackItalic.ttf') format('truetype'),
+        url('Karu-BlackItalic.svg#Karu-BlackItalic') format('svg');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Karu';
+    src: url('Karu-Regular.eot');
+    src: url('Karu-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Karu-Regular.woff2') format('woff2'),
+        url('Karu-Regular.woff') format('woff'),
+        url('Karu-Regular.ttf') format('truetype'),
+        url('Karu-Regular.svg#Karu-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Karu';
+    src: url('Karu-ExtraLight.eot');
+    src: url('Karu-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('Karu-ExtraLight.woff2') format('woff2'),
+        url('Karu-ExtraLight.woff') format('woff'),
+        url('Karu-ExtraLight.ttf') format('truetype'),
+        url('Karu-ExtraLight.svg#Karu-ExtraLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+}
+

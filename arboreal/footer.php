@@ -1,3 +1,5 @@
+</main><!-- /.site-content -->
+
 <footer id="arboreal_footer">
     <div class="carousel">
         <div id="instagram-carousel" class="owl-carousel" style="height: 200px;">
@@ -106,5 +108,28 @@
 </footer>
 
 <?php wp_footer(); ?>
+
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+
+var scroll = document.getElementById("scroll-to-top");
+
+window.onscroll = function() {scrollFunction()};
+scroll.onclick = function() {topFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scroll.classList.add("-active");
+  } else {
+    scroll.classList.remove("-active");
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
 </body>
 </html>

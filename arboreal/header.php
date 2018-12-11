@@ -126,17 +126,6 @@
 
             </div>
         </header> 
-<style>
-#header_submenu_produtos_padrao li, #header_submenu_produtos li { 
-    position: relative;
-}
+<a id="scroll-to-top" class="scroll-to-top" title="Clique aqui para ir pro top"><i class="fa fa-arrow-up"></i></a>
 
-#header_submenu_produtos li:hover a:before, #header_submenu_produtos_padrao li:hover a:before { 
-    content: '\f0d7';
-    font-family: "FontAwesome";
-    position: absolute;
-    top: -14px;
-    left: 50%;
-}
-
-</style>
+<main class="site-content">

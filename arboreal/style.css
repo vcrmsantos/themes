@@ -85,7 +85,7 @@ section {
     color: #B5ADA6;
     margin: 25px;
     margin-bottom: 15px;
-    font-family: "Gotham Medium", Arial, sans-serif;
+    font-family: "Karu", Arial, sans-serif;
     font-weight: bold;
 }
 
@@ -96,7 +96,7 @@ section {
     color: #B5ADA6;
     margin: 25px;
     margin-bottom: 15px;
-    font-family: "Gotham Light", Arial, sans-serif;
+    font-family: "Karu", Arial, sans-serif;
 }
 
 #menu-menu-principal li a:hover, #menu-a-arboreal li a:hover, 
@@ -152,14 +152,14 @@ section {
 
 .logo{
     position: absolute;
-    left: 50%;
+    left: 49%;
     top: 10px;
     transform: translate(-50%, 0);
     -webkit-transition: -webkit-transform 0.5s ease-in-out;
 }
 
-.logo.down-logo img{
-    max-width: 100px;
+.logo.down-logo img {
+    max-width: 80px;
 }
 
 .menu-a-arboreal-container{
@@ -168,18 +168,19 @@ section {
 
 .mini-cart-header{
     position: absolute;
-    left: 75%;
+    right: 26%;
     bottom: 10%;
 }
 
 @media (max-width: 767px){
     .mini-cart-header{
-        left: 80%
+        right: 10%;
     }
 }
 
 .mini-cart-header a{
     color: #B5ADA6;
+    position: relative;
 }
 
 .mini-cart-header a:hover{
@@ -199,78 +200,31 @@ section {
 }
 
 .cart-items-count.count{
-    position: absolute;
-    left: 3px;
-    top: -2px;
+    font-weight: bold;
+    font-size: 10px;
 }
 
 /*Animation ******************************************************************/
 
-@media (max-width: 1198px){
-    .menu-go-right{
-        -webkit-transition: -webkit-transform 0.5s ease-in-out;
-        -ms-transform: translateX(130px); /* IE 9 */
-        -webkit-transform: translateX(130px); /* Safari 3-8 */
-        transform: translateX(130px);
-    }
-    .down-logo{
-        -webkit-transition: -webkit-transform 0.5s ease-in-out;
-        -ms-transform: translate(-50%, 35px); /* IE 9 */
-        -webkit-transform: translate(-50%, 35px); /* Safari 3-8 */
-        transform: translate(-50%, 35px);
-    }
+.down-logo{
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    -ms-transform: translate(-50%, 60px); /* IE 9 */
+    -webkit-transform: translate(-50%, 60px); /* Safari 3-8 */
+    transform: translate(-50%, 60px);
 }
 
-@media (max-width: 1199px) and (min-width: 1050px){
-    .down-logo{
-        -webkit-transition: -webkit-transform 0.5s ease-in-out;
-        -ms-transform: translate(-50%, 45px); /* IE 9 */
-        -webkit-transform: translate(-50%, 45px); /* Safari 3-8 */
-        transform: translate(-50%, 45px);
-    }
-    .menu-go-right{
-        -webkit-transition: -webkit-transform 0.5s ease-in-out;
-        -ms-transform: translateX(200px); /* IE 9 */
-        -webkit-transform: translateX(200px); /* Safari 3-8 */
-        transform: translateX(200px);
-    }
-}
-
-@media (max-width: 1450px) and (min-width: 1200px){
-    .down-logo{
-        -webkit-transition: -webkit-transform 0.5s ease-in-out;
-        -ms-transform: translate(-50%, 55px); /* IE 9 */
-        -webkit-transform: translate(-50%, 55px); /* Safari 3-8 */
-        transform: translate(-50%, 55px);
-    }
-    .menu-go-right{
-        -webkit-transition: -webkit-transform 0.5s ease-in-out;
-        -ms-transform: translateX(55px); /* IE 9 */
-        -webkit-transform: translateX(55px); /* Safari 3-8 */
-        transform: translateX(55px);
-    }
-}
-
-@media (min-width: 1451px){
-    .down-logo{
-        -webkit-transition: -webkit-transform 0.5s ease-in-out;
-        -ms-transform: translate(-50%, 65px); /* IE 9 */
-        -webkit-transform: translate(-50%, 65px); /* Safari 3-8 */
-        transform: translate(-50%, 65px);
-    }
-    .menu-go-right{
-        -webkit-transition: -webkit-transform 0.5s ease-in-out;
-        -ms-transform: translateX(200px); /* IE 9 */
-        -webkit-transform: translateX(200px); /* Safari 3-8 */
-        transform: translateX(200px);
-    }
+.menu-go-right{
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    -ms-transform: translateX(10%); /* IE 9 */
+    -webkit-transform: translateX(10%); /* Safari 3-8 */
+    transform: translateX(10%);
 }
 
 .menu-go-left{
     -webkit-transition: -webkit-transform 0.5s ease-in-out;
-    -ms-transform: translateX(-70px); /* IE 9 */
-    -webkit-transform: translateX(-70px); /* Safari 3-8 */
-    transform: translateX(-70px);
+    -ms-transform: translateX(-25%); /* IE 9 */
+    -webkit-transform: translateX(-25%); /* Safari 3-8 */
+    transform: translateX(-25%);
 }
 
 .row-go-up {
@@ -582,7 +536,7 @@ footer a:hover{
 /*A Arboreal END **************************************************************/
 body {
     background-color: #f5f5f2;
-    font-family: "Gotham Medium", Arial, sans-serif;
+    font-family: "Karu", Arial, sans-serif;
 }
 input, select, textarea {
     font-size: 18px !important;
@@ -593,7 +547,7 @@ input, select, textarea {
     border: 1px #b5ada6 solid !important;
     border-radius: 0;
     font-weight: bold;
-    font-family: "Gotham Bold", Arial, sans-serif;
+    font-family: "Karu", Arial, sans-serif;
     display: block;
     width: 100%;
     margin: 5px;
@@ -612,7 +566,7 @@ input, select, textarea {
     padding: 0 35px !important;
     border: 1px #B5ADA6 solid;
     border-radius: 0;
-    font-family: "Gotham Bold", Arial, sans-serif;
+    font-family: "Karu", Arial, sans-serif;
 }
 
 .btn-arboreal:hover{
@@ -637,7 +591,7 @@ input, select, textarea {
     color: #191919 !important;
     cursor: pointer;
     font-weight: bold;
-    font-family: "Gotham Bold", Arial, sans-serif;
+    font-family: "Karu", Arial, sans-serif;
 }
 
 .btn-arboreal-light:hover{
@@ -650,6 +604,7 @@ input, select, textarea {
     font-size: 28px;
     color: #191919;
     margin-bottom: 30px;
+    font-weight: bold;
 }
 .p-arboreal{
     font-size: 14px;
@@ -658,7 +613,7 @@ input, select, textarea {
 
 .title-arboreal-design{
     font-size: 28px;
-    font-family: "Gotham Light", Arial, sans-serif;
+    font-family: "Karu", Arial, sans-serif;
 }
 
 .scroll-back-to-top-wrapper{
@@ -786,9 +741,8 @@ input, select, textarea {
     border-radius: 0;
     cursor: pointer;
     font-weight: bold;
-    font-family: "Gotham Bold", Arial, sans-serif;
+    font-family: "Karu", Arial, sans-serif;
     float: left;
-    margin-top: 60px;
     text-transform: uppercase;
     padding: 10px;
 }
@@ -809,7 +763,7 @@ input, select, textarea {
     border: 1px #b5ada6 solid !important;
     border-radius: 0;
     font-weight: bold;
-    font-family: "Gotham Bold", Arial, sans-serif;
+    font-family: "Karu", Arial, sans-serif;
 }
 .product_meta{
     display: none;
@@ -827,7 +781,7 @@ input, select, textarea {
 }
 
 .summary.entry-summary h1{
-    font-family: "Gotham Light", Arial, sans-serif !important;
+    font-family: "Karu", Arial, sans-serif !important;
     color: #191919 !important;
 }
 
@@ -846,7 +800,7 @@ input, select, textarea {
     border: 1px #b5ada6 solid !important;
     border-radius: 0;
     font-weight: bold;
-    font-family: "Gotham Bold", Arial, sans-serif;
+    font-family: "Karu", Arial, sans-serif;
 }
 
 #personalize-section2{
@@ -1363,4 +1317,47 @@ ol, ul {
 
 .arboreal-list-menu {
     margin-bottom: 15px;
+}
+
+#header_submenu_produtos_padrao li, #header_submenu_produtos li { 
+    position: relative;
+}
+
+#header_submenu_produtos li:hover a:before, #header_submenu_produtos_padrao li:hover a:before { 
+    content: '\f0d7';
+    font-family: "FontAwesome";
+    position: absolute;
+    top: -15px;
+    left: 45%;
+}
+
+.scroll-to-top {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.scroll-to-top.-active {
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: white; /* Set a background color */
+  color: black !important; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 4px 10px;
+  border-radius: 50%; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  border: 2px solid black;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+
+.scroll-to-top.-active:hover {
+  background-color: #000; /* Add a dark-grey background on hover */
+  color: #fff !important;
 }
