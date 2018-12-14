@@ -131,7 +131,7 @@ function arboReal_scripts() {
     wp_enqueue_style('Gotham Book', get_stylesheet_directory_uri() . '/assets/fonts/Gotham Book.css');
     wp_enqueue_style('Gotham Bold', get_stylesheet_directory_uri() . '/assets/fonts/Gotham Bold.css');
     wp_enqueue_style('Gotham Black', get_stylesheet_directory_uri() . '/assets/fonts/Gotham Black.css'); */
-    wp_enqueue_style('Gotham Black', get_stylesheet_directory_uri() . '/assets/fonts/Karu/karu.css');
+    wp_enqueue_style('font-karu', get_stylesheet_directory_uri() . '/assets/fonts/Karu/karu.css');
     wp_enqueue_style('Rotis SemiSerif Std', get_stylesheet_directory_uri() . '/assets/fonts/Rotis SemiSerif Std.css');
    
     /*

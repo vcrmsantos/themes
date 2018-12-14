@@ -34,9 +34,7 @@ get_header('shop');
 <br><br>
 <div class="header-space-clear-fix" style="background-color: #fff;"></div>
 <section id="arboreal-section2">
-    <div class="container"><br><br>
-        <div class="row">
-            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="container">
                 <?php while (have_posts()) : the_post(); ?>
 
                     <?php wc_get_template_part('content', 'single-product'); ?>
@@ -61,9 +59,7 @@ get_header('shop');
                 //do_action('woocommerce_sidebar');
                 ?>
 
-            </div>
-        </div>
-    </div><br><br>
+    </div>
 </section>
 <section id="personalize-section2">
     <div class="container"><br><br>
@@ -80,10 +76,9 @@ get_header('shop');
                     maciça. COD - A04<br>
 
                 </p><br><br>
-                <select class="atributes">
-                    <option>Selecionar Tamanho</select>
-                </select>
-                <a class="single_add_to_cart_button" style="margin-top: 20px;">Adicionar ao carrinho</a><br><br><br><br><br>
+                <div class="personalize-select">
+                    <?php do_action('woocommerce_variable_add_to_cart'); ?>
+                </div>
             </div>
         </div>
     </div><br><br>
@@ -103,7 +98,6 @@ get_header('shop');
                 <select class="atributes">
                     <option>Selecionar Tamanho</select>
                 </select>
-                <a class="single_add_to_cart_button" style="margin-top: 20px;">Adicionar ao carrinho</a><br><br><br><br><br>
             </div>
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
                 <img style="margin: auto" src="<?php echo get_stylesheet_directory_uri() . '/assets/img/mesa-placeholder.png' ?>">

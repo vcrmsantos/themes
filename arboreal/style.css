@@ -427,27 +427,34 @@ footer a:hover{
     max-width: 325px;
     max-height: 325px;
     margin: auto;
+    border-right: 1px solid #ddd;
 }
-.home-product * {
+.home-product {
     color: #191919;
     margin: 0;
     text-transform: uppercase;
 }
-.home-product img {
+.home-product .image {
     width: 50%;
     height: 50%;
     margin: 10px;
     margin-left: 45%;
 }
-.home-product h5{
+.home-product .title {
     font-size: 16px;
+    font-weight: 600;
+    line-height: 1.2;
 }
-.home-product p{
-    font-size: 16px;
+.home-product .price {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 10px 0;
 }
-.home-product a{
+.home-product .product-link {
+    color: #191919;
     font-size: 13px;
     text-decoration: none;
+    font-weight: 500;
 }
 
 .home-product a:hover{
@@ -457,6 +464,11 @@ footer a:hover{
 .home-product-description{
     padding: 20px;
     width: 65%;
+}
+
+.product-link .icon {
+    color: #ea6823; 
+    margin-right: 5px;
 }
 
 .woocommerce-ordering{
@@ -804,9 +816,9 @@ input, select, textarea {
     font-weight: bold;
 }
 
-.summary.entry-summary h1{
-    font-family: "Karu", Arial, sans-serif !important;
+.single-product .product_title {
     color: #191919 !important;
+    font-weight: 500;
 }
 
 .woocommerce-product-gallery__wrapper img{
@@ -1384,4 +1396,48 @@ ol, ul {
 .scroll-to-top.-active:hover {
   background-color: #000; /* Add a dark-grey background on hover */
   color: #fff !important;
+}
+
+/*------------------------------------*\
+  #SINGLE PRODUCT
+\*------------------------------------*/
+.single-product .quantity .qty {
+    margin: 0;
+}
+
+.personalize-select .variations .label {
+    display: none;
+}
+
+.personalize-select .variations td {
+    background: transparent;
+    padding: 0;
+}
+
+.personalize-select .single_variation_wrap .quantity {
+    float: left;
+    margin-right: 10px;
+}
+
+.personalize-select .single_variation_wrap .price {
+    color: #b5ada6;
+    font-weight: bold;
+}
+
+.variations .reset_variations {
+    color: cornflowerblue;
+}
+
+.variations_form .label label {
+    color: #b5ada6;
+    font-weight: bold;
+}
+
+.storefront-full-width-content.single-product div.product .woocommerce-product-gallery {
+    width: 100%;
+}
+
+.single-product .product .woocommerce-product-gallery .woocommerce-product-gallery__trigger {
+    right: 0;
+    left: 0.1px;
 }

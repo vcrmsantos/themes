@@ -65,16 +65,15 @@ get_template_part('inc/banner');
                                 ?>
                                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6" style="padding: 0;">
                                     <div class="home-product">
-                                        <img src="<?php echo $image[0]; ?>" data-id="<?php echo $product->ID; ?>">
+                                        <img class="image" src="<?php echo $image[0]; ?>" data-id="<?php echo $product->ID; ?>">
                                         <div class="home-product-description">
-                                            <h5><?php echo $product->post_title; ?></h5>
-                                            <p>
+                                            <div class="title"><?php echo $product->post_title; ?></div>
+                                            <div class="price">
                                                 <?php
                                                 $_product = wc_get_product($product->ID);
-                                                echo 'R$ ' . number_format($_product->get_price(), 2, ',', '.');
-                                                ?>
-                                            </p>
-                                            <a href="<?php echo $product->guid; ?>"><i class="fas fa-arrow-right" style="color: #ea6823; margin-right: 5px;"></i> VER PRODUTO</a>
+                                                echo wc_price($_product->get_price()); ?>
+                                            </div>
+                                            <a class="product-link" href="<?php echo $product->guid; ?>"><i class="icon fas fa-arrow-right"></i> VER PRODUTO</a>
                                         </div>
                                     </div>
                                 </div>
