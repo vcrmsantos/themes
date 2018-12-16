@@ -61,11 +61,13 @@ get_template_part('inc/banner');
                             );
                             $loop = new WP_Query($args);
                             foreach ($loop->posts as $product) {
-                                $image = wp_get_attachment_image_src(get_post_thumbnail_id($product->ID), 'single-post-thumbnail');
+                                $image = get_the_post_thumbnail_url( $product->ID, 'single-post-thumbnail');
                                 ?>
                                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6" style="padding: 0;">
                                     <div class="home-product">
-                                        <img class="image" src="<?php echo $image[0]; ?>" data-id="<?php echo $product->ID; ?>">
+                                        <div class="box-produtos__image">
+                                            <img class="image" src="<?php echo $image; ?>" data-id="<?php echo $product->ID; ?>">
+                                        </div>
                                         <div class="home-product-description">
                                             <div class="title"><?php echo $product->post_title; ?></div>
                                             <div class="price">
