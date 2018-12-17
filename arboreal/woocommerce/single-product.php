@@ -61,61 +61,15 @@ get_header('shop');
 
     </div>
 </section>
-<section id="personalize-section2">
-    <div class="container"><br><br>
-        <div class="row">
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                <img style="margin: auto" src="<?php echo get_stylesheet_directory_uri() . '/assets/img/madeira-placeholder.png' ?>">
-            </div>
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                <h1 class="title-arboreal-design" style="color: #b5ada6;">Madeira <br> <i style="font-size: 55px;color: #d7d2cb;font-family: 'Rotis SemiSerif Std';">rústico &<br> sofisticado</i></h1><br>
-                <p class="p-arboreal" style="color: #b5ada6;     font-size: 12px;">
-                    Lareira Ecológica para decoração em área externa com <br>
-                    toque rústico. Produzida em toras e troncos com<br> 
-                    queimador ecológico, funciona a álcool. Lareira em tronco e madeira <br>
-                    maciça. COD - A04<br>
-
-                </p><br><br>
-                <div class="personalize-select">
-                    <?php do_action('woocommerce_variable_add_to_cart'); ?>
-                </div>
-            </div>
-        </div>
-    </div><br><br>
-</section>
-<section id="personalize-section3">
-    <div class="container"><br><br>
-        <div class="row">
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                <h1 class="title-arboreal-design" style="color: #191919;">Pés em <br> <i style="font-size: 55px;font-family: 'Rotis SemiSerif Std';">madeira</i></h1><br>
-                <p class="p-arboreal" style="color: #b5ada6;     font-size: 12px;">
-                    Lareira Ecológica para decoração em área externa com <br>
-                    toque rústico. Produzida em toras e troncos com<br> 
-                    queimador ecológico, funciona a álcool. Lareira em tronco e madeira <br>
-                    maciça. COD - A04<br>
-
-                </p><br><br>
-                <select class="atributes">
-                    <option>Selecionar Tamanho</select>
-                </select>
-            </div>
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                <img style="margin: auto" src="<?php echo get_stylesheet_directory_uri() . '/assets/img/mesa-placeholder.png' ?>">
-            </div>
-        </div>
-
-
-    </div><br><br>
-</section>
 <section id="arboreal-section3" style="background-color: #fff">
     <div class="container">
         <div class="row">
-            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center"><br>
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
                 <p class="p-arboreal">
                     Solicite uma cotação de outra peça que não encontrou.<br>
                     Qualquer dúvida, fale conosco. Temos prazer em atender-lo.
                 </p><br><br>
-                <a style="color: #191919" class="btn-arboreal-light">SOLICITAR UM ORÇAMENTO</a><br><br><br>
+                <a style="color: #191919" class="btn-arboreal-light">SOLICITAR UM ORÇAMENTO</a>
             </div>
         </div>
     </div>
