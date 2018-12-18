@@ -595,7 +595,23 @@ $tipo = (isset($_GET['tipo'])) ? $_GET['tipo'] : "mesa-de-jantar";
                 'material' : material,
                 'modelo' : modelo
             };
+            
+            <?php //$url = get_stylesheet_directory_uri() . '/test.php'; ?>
+            /* jQuery.ajax({
+                url: "<?php echo $url; ?>",
+                type: "post",
+                data: data,
+                success: function (response) {
+                    console.log("Deu certo!");             
+                },
+                error: function(jqXHR, textStatus, errorThrown) {
+                console.log(textStatus, errorThrown);
+                }
 
+
+            });   */
+
+            
             if(comprimento != 'Selecionar Comprimento' && largura != 'Selecionar Largura') {
                 console.log(data);
             } else {
