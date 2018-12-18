@@ -186,7 +186,7 @@ section {
 .mini-cart-header{
     position: absolute;
     right: 26%;
-    bottom: 25%;
+    bottom: 10px;
 }
 
 .row-go-up .mini-cart-header { 
